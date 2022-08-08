@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { fetchCount } from '../features/counter/counterAPI';
+// import { fetchCount } from '../features/counterAPI';
 
 const initialState = {
   value: 0,
@@ -13,12 +13,12 @@ const initialState = {
 // typically used to make async requests.
 export const incrementAsync = createAsyncThunk(
   'counter/fetchCount',
-  async (amount) => {
-    const response = await fetchCount(amount);
-    // The value we return becomes the `fulfilled` action payload
-    return response.data;
-  }
-);
+//   async (amount) => {
+//     const response = await fetchCount(amount);
+//     // The value we return becomes the `fulfilled` action payload
+//     return response.data;
+//   }
+ );
 
 export const counterSlice = createSlice({
   name: 'counter',
