@@ -53,3 +53,18 @@ border-bottom: 1px solid #282c2d;
 .profilescreen_plans{
     margin-top: 20px;
 } 
+@media screen and (max-width:600px){
+    .profilescreen_body{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        justify-content: center;
+        align-items: center;
+    }
+    .profilescreen_body > h1{
+        font-size: 40px;
+    }
+    .profilescreen_info > img{
+        height: 60px;
+    }
+}
